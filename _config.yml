@@ -1,10 +1,5 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+markdown:         kramdown
 
 # Setup
 title:            Hyde
@@ -24,3 +19,11 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/poole/hyde
+
+plugins: ['octopress-paginate']
+
+pagination:
+  enabled: true
+  limit: false
+  per_page: 10
+  title_suffix: " (page :num)"
